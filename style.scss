@@ -27,6 +27,7 @@ h2 {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,6 +37,17 @@ body {
 
 ul {
   list-style: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: $color-primary;
 }
 
 .container {
@@ -73,7 +85,7 @@ ul {
     margin-top: 20px;
     text-align: right;
 
-    &:not(:first-child) {
+    & > *:not(:first-child) {
       margin-left: 20px;
     }
   }
@@ -101,6 +113,7 @@ ul {
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.05);
   }
 
   &-outline {
@@ -142,6 +155,12 @@ ul {
     border: none;
     background-color: transparent;
     color: $color-danger;
+
+    &:hover {
+      border: none;
+      background-color: $color-danger;
+      color: white;
+    }
   }
 }
 
@@ -316,6 +335,7 @@ ul {
     rgba(101, 78, 163, 1) 0%,
     rgba(234, 175, 200, 1) 100%
   );
+  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   color: white;
 
@@ -444,6 +464,7 @@ ul {
   padding: 50px 0;
   background-color: #3d4b51;
   color: white;
+  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
 
   &_list {
     display: flex;

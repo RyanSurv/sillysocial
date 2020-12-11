@@ -23,6 +23,7 @@ h2 {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +33,18 @@ body {
 
 ul {
   list-style: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: #654ea3;
 }
 
 .container {
@@ -75,7 +88,7 @@ ul {
   text-align: right;
 }
 
-.form_actions:not(:first-child) {
+.form_actions > *:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -103,6 +116,8 @@ ul {
 
 .btn:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .btn-outline {
@@ -144,6 +159,12 @@ ul {
   border: none;
   background-color: transparent;
   color: #d63031;
+}
+
+.btn-link-danger:hover {
+  border: none;
+  background-color: #d63031;
+  color: white;
 }
 
 .hero {
@@ -324,6 +345,8 @@ ul {
   background: #654ea3;
   background: -webkit-gradient(linear, left bottom, left top, from(#654ea3), to(#eaafc8));
   background: linear-gradient(0deg, #654ea3 0%, #eaafc8 100%);
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   color: white;
 }
@@ -477,6 +500,8 @@ ul {
   padding: 50px 0;
   background-color: #3d4b51;
   color: white;
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .footer_list {
