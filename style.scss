@@ -1,5 +1,7 @@
 $color-primary: #654ea3;
 $color-secondary: #eaafc8;
+$color-danger: #d63031;
+$color-success: #00b894;
 
 *,
 *:before,
@@ -29,6 +31,7 @@ html {
 
 body {
   font-family: "Mukta", sans-serif;
+  background-color: #f9f9f9;
 }
 
 ul {
@@ -53,6 +56,42 @@ ul {
   width: 50px;
   border-bottom: 2px solid $color-secondary;
   margin: 10px 0;
+}
+
+.form {
+  &_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &_actions {
+    margin-top: 20px;
+    text-align: right;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &_input {
+    font: inherit;
+    padding: 5px 20px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
 }
 
 .btn {
@@ -91,6 +130,18 @@ ul {
     border: none;
     background-color: $color-secondary;
     color: white;
+  }
+
+  &-danger {
+    border: none;
+    background-color: $color-danger;
+    color: white;
+  }
+
+  &-link-danger {
+    border: none;
+    background-color: transparent;
+    color: $color-danger;
   }
 }
 
@@ -370,6 +421,22 @@ ul {
     .image {
       grid-area: img;
     }
+  }
+}
+
+.message {
+  padding: 50px 0;
+
+  .small-border {
+    margin: 10px auto;
+  }
+
+  &_text {
+    text-align: center;
+  }
+
+  &_form {
+    margin-top: 50px;
   }
 }
 

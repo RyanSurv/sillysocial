@@ -27,6 +27,7 @@ html {
 
 body {
   font-family: "Mukta", sans-serif;
+  background-color: #f9f9f9;
 }
 
 ul {
@@ -51,6 +52,46 @@ ul {
   width: 50px;
   border-bottom: 2px solid #eaafc8;
   margin: 10px 0;
+}
+
+.form_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.form_row:not(:first-child) {
+  margin-top: 20px;
+}
+
+.form_actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form_actions:not(:first-child) {
+  margin-left: 20px;
+}
+
+.form_input {
+  font: inherit;
+  padding: 5px 20px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form_input:not(:first-child) {
+  margin-left: 20px;
 }
 
 .btn {
@@ -91,6 +132,18 @@ ul {
   border: none;
   background-color: #eaafc8;
   color: white;
+}
+
+.btn-danger {
+  border: none;
+  background-color: #d63031;
+  color: white;
+}
+
+.btn-link-danger {
+  border: none;
+  background-color: transparent;
+  color: #d63031;
 }
 
 .hero {
@@ -402,6 +455,22 @@ ul {
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: img;
+}
+
+.message {
+  padding: 50px 0;
+}
+
+.message .small-border {
+  margin: 10px auto;
+}
+
+.message_text {
+  text-align: center;
+}
+
+.message_form {
+  margin-top: 50px;
 }
 
 .footer {
