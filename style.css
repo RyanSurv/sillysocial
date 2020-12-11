@@ -137,6 +137,11 @@ a:hover {
   padding: 10px 40px;
 }
 
+.btn-extra-large {
+  font-size: 24px;
+  padding: 10px 60px;
+}
+
 .btn-primary {
   border: none;
   background-color: #654ea3;
@@ -169,8 +174,11 @@ a:hover {
 
 .hero {
   background: #654ea3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#654ea3), to(#eaafc8));
-  background: linear-gradient(0deg, #654ea3 0%, #eaafc8 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(101, 78, 163, 0.95)), to(rgba(234, 175, 200, 0.95))), url("./assets/img/groupPhones.jpg");
+  background: linear-gradient(0deg, rgba(101, 78, 163, 0.95) 0%, rgba(234, 175, 200, 0.95) 100%), url("./assets/img/groupPhones.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px 0;
   height: 75vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
@@ -218,7 +226,7 @@ a:hover {
 }
 
 .hero_cta {
-  margin-top: 200px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +238,10 @@ a:hover {
 
 .hero_cta_text h1 {
   text-transform: uppercase;
+}
+
+.hero_cta_text button {
+  margin-top: 50px;
 }
 
 .fts {
@@ -343,8 +355,11 @@ a:hover {
 .video {
   padding: 100px 0;
   background: #654ea3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#654ea3), to(#eaafc8));
-  background: linear-gradient(0deg, #654ea3 0%, #eaafc8 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(101, 78, 163, 0.95)), to(rgba(234, 175, 200, 0.95))), url("./assets/img/singleGirlPhone.jpg");
+  background: linear-gradient(0deg, rgba(101, 78, 163, 0.95) 0%, rgba(234, 175, 200, 0.95) 100%), url("./assets/img/singleGirlPhone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   text-align: center;

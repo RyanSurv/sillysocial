@@ -133,6 +133,11 @@ a:hover {
     padding: 10px 40px;
   }
 
+  &-extra-large {
+    font-size: 24px;
+    padding: 10px 60px;
+  }
+
   &-primary {
     border: none;
     background-color: $color-primary;
@@ -167,10 +172,14 @@ a:hover {
 .hero {
   background: rgb(101, 78, 163);
   background: linear-gradient(
-    0deg,
-    rgba(101, 78, 163, 1) 0%,
-    rgba(234, 175, 200, 1) 100%
-  );
+      0deg,
+      rgba(101, 78, 163, 0.95) 0%,
+      rgba(234, 175, 200, 0.95) 100%
+    ),
+    url("./assets/img/groupPhones.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px 0;
   height: 75vh;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
@@ -216,7 +225,7 @@ a:hover {
   }
 
   &_cta {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -224,6 +233,10 @@ a:hover {
     &_text {
       h1 {
         text-transform: uppercase;
+      }
+
+      button {
+        margin-top: 50px;
       }
     }
   }
@@ -331,10 +344,14 @@ a:hover {
   padding: 100px 0;
   background: rgb(101, 78, 163);
   background: linear-gradient(
-    0deg,
-    rgba(101, 78, 163, 1) 0%,
-    rgba(234, 175, 200, 1) 100%
-  );
+      0deg,
+      rgba(101, 78, 163, 0.95) 0%,
+      rgba(234, 175, 200, 0.95) 100%
+    ),
+    url("./assets/img/singleGirlPhone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   color: white;
