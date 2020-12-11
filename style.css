@@ -297,6 +297,10 @@ a:hover {
   max-width: 22.5%;
 }
 
+.fts_fts_ft:nth-child(odd) i {
+  color: #eaafc8;
+}
+
 .fts_fts_ft:not(:first-child) {
   margin-left: 50px;
 }
@@ -305,7 +309,20 @@ a:hover {
   margin: auto;
   height: 75px;
   width: 75px;
-  background-color: #eaafc8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fts_fts_ft_icon i {
+  font-size: 48px;
+  color: #654ea3;
 }
 
 .fts_fts_ft_text {

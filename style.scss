@@ -283,6 +283,12 @@ a:hover {
     &_ft {
       max-width: 22.5%;
 
+      &:nth-child(odd) {
+        i {
+          color: $color-secondary;
+        }
+      }
+
       &:not(:first-child) {
         margin-left: 50px;
       }
@@ -291,7 +297,15 @@ a:hover {
         margin: auto;
         height: 75px;
         width: 75px;
-        background-color: $color-secondary;
+        // background-color: $color-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 48px;
+          color: $color-primary;
+        }
       }
 
       &_text {
