@@ -19,6 +19,7 @@ h3 {
 
 h1 {
   font-size: 64px;
+  line-height: 64px;
 }
 
 h2 {
@@ -134,8 +135,10 @@ a:hover {
   }
 
   &-extra-large {
-    font-size: 24px;
-    padding: 10px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    padding: 15px 60px;
   }
 
   &-primary {
@@ -184,10 +187,15 @@ a:hover {
   height: 75vh;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
+  .container {
+    height: 100%;
+  }
+
   &_nav {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: white;
 
     &_logo {
@@ -195,6 +203,12 @@ a:hover {
         height: 75px;
         width: 75px;
         background-color: white;
+      }
+
+      max-width: 150px;
+
+      img {
+        width: 100%;
       }
     }
 
@@ -225,12 +239,16 @@ a:hover {
   }
 
   &_cta {
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
     justify-content: space-between;
     color: white;
+    position: relative;
+    height: 100%;
 
     &_text {
+      max-width: 55%;
+
       h1 {
         text-transform: uppercase;
       }
@@ -238,6 +256,12 @@ a:hover {
       button {
         margin-top: 50px;
       }
+    }
+
+    &_img {
+      position: absolute;
+      right: 0;
+      bottom: 190px;
     }
   }
 }
@@ -257,6 +281,8 @@ a:hover {
     margin-top: 100px;
 
     &_ft {
+      max-width: 22.5%;
+
       &:not(:first-child) {
         margin-left: 50px;
       }

@@ -15,6 +15,7 @@ h3 {
 
 h1 {
   font-size: 64px;
+  line-height: 64px;
 }
 
 h2 {
@@ -138,8 +139,10 @@ a:hover {
 }
 
 .btn-extra-large {
-  font-size: 24px;
-  padding: 10px 60px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  padding: 15px 60px;
 }
 
 .btn-primary {
@@ -185,23 +188,36 @@ a:hover {
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
+.hero .container {
+  height: 100%;
+}
+
 .hero_nav {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   color: white;
+}
+
+.hero_nav_logo {
+  max-width: 150px;
 }
 
 .hero_nav_logo .logo {
   height: 75px;
   width: 75px;
   background-color: white;
+}
+
+.hero_nav_logo img {
+  width: 100%;
 }
 
 .hero_nav_menu ul .selected {
@@ -226,7 +242,7 @@ a:hover {
 }
 
 .hero_cta {
-  margin-top: 100px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +250,12 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
+  position: relative;
+  height: 100%;
+}
+
+.hero_cta_text {
+  max-width: 55%;
 }
 
 .hero_cta_text h1 {
@@ -242,6 +264,12 @@ a:hover {
 
 .hero_cta_text button {
   margin-top: 50px;
+}
+
+.hero_cta_img {
+  position: absolute;
+  right: 0;
+  bottom: 190px;
 }
 
 .fts {
@@ -263,6 +291,10 @@ a:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 100px;
+}
+
+.fts_fts_ft {
+  max-width: 22.5%;
 }
 
 .fts_fts_ft:not(:first-child) {
