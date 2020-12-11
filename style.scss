@@ -628,6 +628,12 @@ ul {
     font-size: 12px;
   }
 
+  .form {
+    .&_row {
+      flex-direction: column;
+    }
+  }
+
   .hero {
     &_cta {
       &_text {
