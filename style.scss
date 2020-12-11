@@ -728,6 +728,11 @@ a:hover {
   }
 
   .hero {
+    &_nav {
+      &_logo {
+        max-width: 100px;
+      }
+    }
     &_cta {
       &_text {
         h1 {
