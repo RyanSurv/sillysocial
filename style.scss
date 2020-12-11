@@ -629,8 +629,13 @@ ul {
   }
 
   .form {
-    .&_row {
+    &_row {
       flex-direction: column;
+    }
+
+    &_input:not(:first-child) {
+      margin-left: 0;
+      margin-top: 20px;
     }
   }
 
